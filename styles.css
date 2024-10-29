@@ -1,0 +1,283 @@
+
+@import url("styles/header.css");
+
+body {
+    background-color: #fff48e; /* Amarelo pastel claro */
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Estilos para o cabeçalho */
+.cabeçalho {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffa068;
+}
+
+/* Container para alinhar logo e menu */
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Logo Kombi */
+.logo-kombi {
+    width: 85px; /* Ajuste o tamanho conforme necessário */
+    height: 55px; /* Ajuste o tamanho conforme necessário */
+    margin-right: 5px; /* Aproxima a logo do menu hamburguer */
+}
+
+/* Estilo do menu hamburguer */
+.cabeçalho__menu-hamburguer {
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff48e;
+    margin-right: 10px; /* Espaçamento entre o menu hamburguer e a logo */
+}
+
+/* Estilos para os ícones */
+.icones {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Move os ícones para a direita */
+}
+
+.icone {
+    width: 24px; /* Ajuste o tamanho conforme necessário */
+    height: 24px; /* Ajuste o tamanho conforme necessário */
+    margin-left: 10px; /* Espaçamento entre os ícones */
+}
+
+.menu-lateral {
+    display: none; /* Inicialmente oculto */
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 100%;
+    background-color: #8385ff;
+    padding: 10px;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Garante que o menu fique sempre acima */
+}
+
+.menu-lateral a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.menu-lateral a:hover {
+    background-color: #ffa068;
+}
+
+.menu-lateral--ativo {
+    display: block; /* Exibe o menu quando ativo */
+}
+
+/* Oculta a checkbox */
+.container__botao {
+    display: none; /* Oculta a checkbox */
+}
+
+.banner {
+    margin-top: 20px; /* Adiciona um espaço maior entre o banner e o cabeçalho */
+    background: #8385ff; /* Cor de fundo do banner */
+    color: #ffffff; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 2em 1em; /* Espaçamento interno */
+    position: relative; /* Adiciona posição relativa para o banner */
+    z-index: 1; /* Garante que o banner fique acima de outros elementos */
+    border-radius: 24px;
+    width: 70%;
+    max-width: 800px; /* Limita a largura máxima para telas grandes */
+    margin-left: auto; /* Centraliza o banner horizontalmente */
+    margin-right: auto; /* Centraliza o banner horizontalmente */
+}
+
+.banner__titulo {
+    font-size: 25px; /* Tamanho do título */
+    font-weight: 900; /* Peso da fonte do título */
+}
+
+.banner__texto {
+    font-weight: 500; /* Peso da fonte do texto */
+    margin: 0.5em 0; /* Margem em cima e embaixo */
+}
+
+.banner__pesquisa {
+    background-color: transparent; /* Fundo transparente */
+    border: 1px solid #ffffff; /* Borda branca */
+    color: #ffffff; /* Cor do texto */
+    border-radius: 24px; /* Bordas arredondadas */
+    padding: 1em; /* Espaçamento interno */
+    width: 70%; /* Largura total */
+    box-sizing: border-box; /* Inclui borda e padding na largura total */
+}
+
+.banner__pesquisa::placeholder {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Fonte do placeholder */
+    font-size: 14px; /* Tamanho do texto do placeholder */
+    font-weight: 400; /* Peso do texto do placeholder */
+    text-align: center; /* Centraliza o texto do placeholder */
+    color: #ffffff; /* Cor do texto do placeholder */
+}
+
+.carrossel__titulo {
+    color: #ffa068;
+    background-color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 900;
+    padding: 1em 0 0.5em 0;
+    margin-top: 1em;
+    margin-bottom: 1em; /* Espaçamento entre o título e o carrossel */
+}
+
+  .swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 0.5em 0;
+  }
+
+  .swiper {
+    width: 100%; /* Garante que o swiper ocupe toda a largura */
+    max-width: 1200px; /* Limita a largura máxima para centralizar */
+    margin: 0 auto; /* Centraliza o carrossel na página */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Remove qualquer margem */
+}
+
+.swiper-slide img {
+    width: 70%; /* Ajusta a largura da imagem ao slide */
+    height: auto; /* Mantém a proporção */
+    margin: 0.5; /* Remove qualquer margem da imagem */
+    padding: 0; /* Remove qualquer padding */
+}
+
+  .card__descrição {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+  }
+
+  .card__botões {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .descrição__titulo {
+    color: #8385ff;
+    font-weight: 700;
+  }
+
+  .descrição__texto {
+    font-size: 14px;
+  }
+
+  .cards-section {
+    display: flex;
+    gap: 25px; /* Reduz o espaçamento entre os cards para aproximá-los */
+    padding: 20px;
+    justify-content: center; /* Centraliza os cards na tela */
+}
+
+.card {
+    width: 220px; /* Ajusta o tamanho dos cards para ficarem mais compactos */
+    padding: 10px; /* Mantém o padding interno */
+    border-radius: 8px;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.2);
+    background-color: #ffa068;
+}
+
+.card__descrição {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px; /* Reduz a margem inferior */
+}
+
+.descrição__imagem {
+    width: 90%; /* Ajusta a largura da imagem dentro do card */
+    height: auto;
+    margin-top: 10px;
+    border-radius: 24px; /* Bordas arredondadas */
+}
+
+.card__botões {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.botões__ancora {
+    background-color: #8385ff;
+    padding: 1em 2.2em;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 24px;
+  }
+
+.botões__item {
+    display: inline-flex; /* Coloca os ícones lado a lado */
+    margin: 0 0.2em; /* Reduz o espaçamento entre os ícones */
+}
+/* Rodapé Estilos */
+.rodape {
+    background-color: #ffa068; /* Laranja pastel como no cabeçalho */
+    color: #ffffff; /* Texto branco para contraste */
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  }
+  
+  .rodape__secao {
+    flex: 1 1 200px;
+    margin: 10px 0;
+  }
+  
+  .rodape__titulo {
+    font-size: 18px;
+    font-weight: 700;
+    color: #8385ff; /* Azul suave */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  
+  .rodape__lista {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .rodape__item {
+    margin: 8px 0;
+  }
+  
+  .rodape__link {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .rodape__link:hover {
+    color: #8385ff; /* Azul suave ao passar o mouse */
+  }
+  

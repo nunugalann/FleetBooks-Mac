@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FleetBooks Mac</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu-toggle" class="container__botao" />
+            <label for="menu-toggle">
+                <span class="cabeçalho__menu-hamburguer" id="menu-hamburguer">&#9776;</span>
+            </label>
+
+            <img src="img/KOMBI.png" alt="Logo FleetBooks Mac" class="logo-kombi">
+
+            <div class="icones">
+                <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="icone"></a>
+                <a href="#"><img src="img/Compras.svg" alt="Carrinho de compras" class="icone"></a>
+                <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="icone"></a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="menu-lateral" id="menu">
+        <a href="#">Início</a>
+        <a href="#">Favoritos</a>
+        <a href="#">Carrinho</a>
+        <a href="#">Perfil</a>
+    </nav>
+
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+        <p class="banner__texto">
+            Viaje pela história do rock na Kombi do FleetBooks Mac!
+        </p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima estação? ⌕" />
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/daisyjones.jpg" /></div>
+                <div class="swiper-slide"><img src="img/rita.jpg" /></div>
+                <div class="swiper-slide"><img src="img/ouvido.jpg" /></div>
+                <div class="swiper-slide"><img src="img/stevie.jpg" /></div>
+                <div class="swiper-slide"><img src="img/beatles.jpg" /></div>
+                <div class="swiper-slide"><img src="img/thecure.jpg" /></div>
+                <div class="swiper-slide"><img src="img/chorao.jpg" /></div>
+                <div class="swiper-slide"><img src="img/primavera.jpg" /></div>
+                <div class="swiper-slide"><img src="img/paralamas.jpg" /></div>
+                <div class="swiper-slide"><img src="img/led.jpg" /></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <section class="cards-section">
+        <div class="card">
+            <div class="card__descrição">
+                <h3 class="descrição__titulo">RECOMENDAÇÃO DIÁRIA</h3>
+                <h2 class="descrição__titulo-livro">The Left Banke - Walk Away Renee</h2>
+                <p class="descrição__texto">
+                    ▶︎ •၊၊||၊|။||||။ ၊|• 0:10
+                </p>
+                <img src="img/left.jpg" class="descrição__imagem" alt="Livro Angular 11 e Firebase"/>
+            </div>
+            <div class="card__botões">
+                <ul class="botões">
+                    <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro" /></li>
+                </ul>
+                <a href="#" class="botões__ancora">Saiba mais</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card__descrição">
+    
+                <h3 class="descrição__titulo">DESENVOLVEDORA DO SITE</h3>
+                <h2 class="descrição__titulo-livro">LIBA;  Vocalista, escritora renomada e beatlemaníaca.</h2>
+                <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+                <img src="img/liba.jpg" class="descrição__imagem" alt="LIBA">
+            </div>
+            <div class="card__botões">
+                <ul class="botões">
+                    <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                </ul>
+                <a href="#" class="botões__ancora">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+    <footer class="rodape">
+        <section class="rodape__secao">
+          <h2 class="rodape__titulo">NAVEGAÇÃO</h2>
+          <ul class="rodape__lista">
+            <li class="rodape__item"><a href="#" class="rodape__link">Home</a></li>
+            <li class="rodape__item"><a href="#" class="rodape__link">Sobre Nós</a></li>
+            <li class="rodape__item"><a href="#" class="rodape__link">Serviços</a></li>
+            <li class="rodape__item"><a href="#" class="rodape__link">Contato</a></li>
+          </ul>
+        </section>
+      
+        <section class="rodape__secao">
+          <h2 class="rodape__titulo">REDES SOCIAIS</h2>
+          <ul class="rodape__lista">
+            <li class="rodape__item"><a href="#" class="rodape__link">Facebook</a></li>
+            <li class="rodape__item"><a href="#" class="rodape__link">Instagram</a></li>
+            <li class="rodape__item"><a href="#" class="rodape__link">Twitter</a></li>
+            <li class="rodape__item"><a href="#" class="rodape__link">LinkedIn</a></li>
+          </ul>
+        </section>
+      
+        <section class="rodape__secao">
+          <h2 class="rodape__titulo">AJUDA</h2>
+          <ul class="rodape__lista">
+            <li class="rodape__item"><a href="#" class="rodape__link">FAQ</a></li>
+            <li class="rodape__item"><a href="#" class="rodape__link">Suporte</a></li>
+            <li class="rodape__item"><a href="#" class="rodape__link">Política de Privacidade</a></li>
+            <li class="rodape__item"><a href="#" class="rodape__link">Termos de Uso</a></li>
+          </ul>
+        </section>
+      </footer>
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".swiper", {
+            spaceBetween: 1,
+            slidesPerView: 5,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "bullets",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+
+
+
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('change', () => {
+            menu.classList.toggle('menu-lateral--ativo');
+        });
+    </script>
+</body>
+</html>
